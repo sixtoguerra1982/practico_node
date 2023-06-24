@@ -31,7 +31,6 @@ async function input(fileName, fileExt , money, qPesos){
         throw "No vienen todos los datos"
     }
 
-
     // TRAER DATOS DE LA API EN LA VARIABLE DATA
     const data = await request('https://mindicador.cl/api')
     // buscar la moneda en concreto 
@@ -41,7 +40,7 @@ async function input(fileName, fileExt , money, qPesos){
         moneyObj['file_name'] = fileName
         moneyObj['file_ext'] = fileExt
         moneyObj['qpesos'] = parseInt(qPesos)
-        console.log(moneyObj)
+        // console.log(moneyObj)
 
         // CREAR EL ARCHIVO CON LA SALIDA CORRESPONDIENTE
 
@@ -57,9 +56,7 @@ async function input(fileName, fileExt , money, qPesos){
 
         // ESCRIBIMOS EN EL ARCHIVO
         fs.writeFile(fileName + "." + fileExt, cadena , 'utf8', () => {
-            console.log('Archivo creado con éxito');
-            // AQUI QUEDAMOS
-            // A TRAVES DE CHILDPROCESS LEER EL ARCHIVO CREADO
+            console.log(cadena);
         });
 
     }else{

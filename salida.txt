@@ -1,6 +1,6 @@
-A la fecha: 2023-06-22T04:00:00.000Z 
+A la fecha: 2023-06-23T04:00:00.000Z 
 Fue realizada cotización con los siguientes datos: 
-Valor dolar: 801.9
-Cantidad de pesos a convertir: 10000 pesos
+Valor dolar: 805.02
+Cantidad de pesos a convertir: 250000 pesos
 Convertido a dolar da un total de:
- 12.47
+ 310.55
