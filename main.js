@@ -5,7 +5,6 @@ const exec = util.promisify(require('child_process').exec);
 const argument = process.argv.slice(2);
 
 async function ejecutar(archivo, extension, money, qpesos) {
-    const filename = archivo + "." + extension
     const { stdout } = await exec(`node index.js ${archivo} ${extension} ${money} ${qpesos}`);
     return stdout;
 }
